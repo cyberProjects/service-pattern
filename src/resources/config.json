@@ -1,0 +1,22 @@
+{
+    "requestTypes": [
+        "Dog",
+        "Cat"
+    ],
+    "requestHandlers": [
+        {
+            "name": "DogService",
+            "dependents": [
+                "DogSvc1",
+                "DogSvc2"
+            ]
+        },
+        {
+            "name": "CatService",
+            "dependents": [
+                "CatSvc1",
+                "CatSvc2"
+            ]
+        }
+    ]
+}
