@@ -1,7 +1,9 @@
+import { Response } from "express";
+import { AppRequest } from "../model/AppRequest";
 import { IAnimalService } from "./IAnimalService";
 
 export class CatSvc2 implements IAnimalService {
-    constructor(private requestId: string) {
+    constructor(private appReq: AppRequest) {
         console.log('CatSvc2 created!');
     }
 

@@ -9,14 +9,16 @@
             "dependents": [
                 "DogSvc1",
                 "DogSvc2"
-            ]
+            ],
+            "count": 2
         },
         {
             "name": "CatService",
             "dependents": [
                 "CatSvc1",
                 "CatSvc2"
-            ]
+            ],
+            "count": 2
         }
     ]
 }

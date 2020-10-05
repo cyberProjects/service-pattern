@@ -13,6 +13,11 @@
         "types": [
             "node"
         ],
-        //"strictPropertyInitialization": false
+        "typeRoots": [
+            
+        ],
+        // find other workarounds below
+        "strictPropertyInitialization": false,
+        "strictNullChecks": false
     }
 }

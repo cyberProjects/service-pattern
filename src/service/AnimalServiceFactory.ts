@@ -1,3 +1,4 @@
+import { AppRequest } from "../model/AppRequest";
 import { CatService } from "./CatService";
 import { DogService } from "./DogService";
 import { IAnimalService } from "./IAnimalService";
@@ -8,17 +9,17 @@ export class AnimalServiceFactory {
         ['Cat', this.getCatService()]
     ]);
 
-    constructor(private requestId: string) { }
+    constructor(private appReq: AppRequest) { }
 
     public getService(type: string): IAnimalService {
         return this.serviceMap.get(type) as IAnimalService;
     }
 
     private getDogService(): IAnimalService {
-        return new DogService(this.requestId);
+        return new DogService(this.appReq);
     }
 
     private getCatService(): IAnimalService {
-        return new CatService(this.requestId);
+        return new CatService(this.appReq);
     }
 }

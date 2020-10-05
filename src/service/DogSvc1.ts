@@ -1,7 +1,8 @@
+import { AppRequest } from "../model/AppRequest";
 import { IAnimalService } from "./IAnimalService";
 
 export class DogSvc1 implements IAnimalService {
-    constructor(private requestId: string) {
+    constructor(private appReq: AppRequest) {
         console.log('DogSvc1 created!');
     }
 
